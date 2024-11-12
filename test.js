@@ -4,6 +4,14 @@ import { exec } from 'node:child_process'
 
 console.log('start')
 const watcher = chokidar.watch('./src/')
+
+// uncomment for debugging to test if file watching actually works
+// (it still works even with EBADF errors)
+// watcher.on('all', (event, path) => {
+//   if (event === 'add' || event === 'addDir') return
+//   console.log('chokidar', event, path)
+// })
+
 console.log('watching')
 await wait(2000)
 // uncomment for debugging if needed

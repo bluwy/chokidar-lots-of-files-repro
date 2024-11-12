@@ -1,0 +1,9 @@
+{
+  "name": "chokidar-lots-of-files",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "chokidar": "^4.0.1",
+    "chokidar3": "npm:chokidar@3.6.0"
+  }
+}
